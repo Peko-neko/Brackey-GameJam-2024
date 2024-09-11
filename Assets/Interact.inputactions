@@ -1,0 +1,46 @@
+{
+    "name": "Interact",
+    "maps": [
+        {
+            "name": "Interacting",
+            "id": "98254157-f136-41c1-a460-9d16348530a4",
+            "actions": [
+                {
+                    "name": "Clean",
+                    "type": "Button",
+                    "id": "85355b8c-1917-47a8-8ec9-193d2eac999a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Hold",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "8090a835-ba83-4cf0-884f-fda8b0983bd4",
+                    "path": "<Keyboard>/enter",
+                    "interactions": "Hold",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Clean",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Keyboard",
+            "bindingGroup": "Keyboard",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
