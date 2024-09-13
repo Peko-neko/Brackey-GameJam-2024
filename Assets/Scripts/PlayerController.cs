@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     public float speed;
     public float groundDistance;
 
+    public Animator animator;
     public LayerMask terrainLayer;
     public Rigidbody rb;
     public SpriteRenderer sr;
@@ -37,14 +38,10 @@ public class PlayerController : MonoBehaviour
         Vector3 moveDir = new Vector3(x, 0, y);
         rb.velocity = moveDir * speed;
 
-        if (x != 0 && x < 0)
-        {
-            sr.flipX = true;
-        }
+        animator.SetFloat("Horizontal", x);
+        animator.SetFloat("Vertical", y);
+        animator.SetFloat("Speed", moveDir.magnitude);
 
-        else if (x != 0 && x > 0)
-        {
-            sr.flipX = false;
-        }
+
     }
 }
